@@ -1,0 +1,70 @@
+.card {
+  width: 200px;
+  box-sizing: border-box;
+
+  margin-top: 40px;
+  padding: 16px;
+
+  background-color: $color-white;
+  border: 1px solid $color-border;
+}
+
+.card__image {
+  width: 160px;
+  height: 134px;
+
+  background-image: url('../images/imac.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  margin: 16px auto 0;
+}
+
+.card__title {
+  margin: 0 0 8px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: $color-dark;
+}
+
+.card__rewiew-count {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0;
+  text-align: right;
+  vertical-align: 0;
+}
+
+.card__price {
+  margin: 12px 0;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: $color-dark;
+}
+
+.card__buy {
+  display: block;
+
+  padding: 8px 0;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+
+  color: $color-white;
+  background-color: $color-blue;
+  border-radius: 4px;
+}
+
+.card__buy:hover {
+  background-color: $color-blue-hover;
+}

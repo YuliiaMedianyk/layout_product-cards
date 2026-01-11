@@ -1,3 +1,16 @@
+@import './utils/variables';
+@import './blocks/card';
+@import './blocks/stars';
+
 body {
   margin: 0;
+  padding: 0;
+
+  background-color: #f2f2f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-family: Arial, sans-serif;
 }
