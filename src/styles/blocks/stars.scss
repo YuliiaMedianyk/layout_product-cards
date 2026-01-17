@@ -1,20 +1,32 @@
 .stars {
   display: flex;
+  align-items: center;
+
+  &__group {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__item {
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/star.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__reviews {
+    margin-left: 8px;
+    font-size: 10px;
+    line-height: 14px;
+    color: $main-color;
+  }
 }
 
-.stars__star {
-  width: 16px;
-  height: 16px;
-
-  background-image: url('../images/star.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.stars--1 .stars__star:nth-child(-n + 1),
-.stars--2 .stars__star:nth-child(-n + 2),
-.stars--3 .stars__star:nth-child(-n + 3),
-.stars--4 .stars__star:nth-child(-n + 4),
-.stars--5 .stars__star:nth-child(-n + 5) {
+.stars--1 .stars__item:nth-child(-n + 1),
+.stars--2 .stars__item:nth-child(-n + 2),
+.stars--3 .stars__item:nth-child(-n + 3),
+.stars--4 .stars__item:nth-child(-n + 4),
+.stars--5 .stars__item:nth-child(-n + 5) {
   background-image: url('../images/star-active.svg');
 }
