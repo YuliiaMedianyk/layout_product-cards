@@ -16,17 +16,17 @@
   }
 
   &__reviews {
-    margin-left: 8px;
+    font-weight: 400;
     font-size: 10px;
     line-height: 14px;
-    color: $main-color;
+    color: $color-text-primary;
   }
-}
 
-.stars--1 .stars__item:nth-child(-n + 1),
-.stars--2 .stars__item:nth-child(-n + 2),
-.stars--3 .stars__item:nth-child(-n + 3),
-.stars--4 .stars__item:nth-child(-n + 4),
-.stars--5 .stars__item:nth-child(-n + 5) {
-  background-image: url('../images/star-active.svg');
+  &--1 &__item:nth-child(-n + 1),
+  &--2 &__item:nth-child(-n + 2),
+  &--3 &__item:nth-child(-n + 3),
+  &--4 &__item:nth-child(-n + 4),
+  &--5 &__item:nth-child(-n + 5) {
+    background-image: url('../images/star-active.svg');
+  }
 }
